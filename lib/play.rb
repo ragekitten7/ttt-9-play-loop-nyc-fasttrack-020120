@@ -37,5 +37,8 @@ end
 
 # Define your play method below
 def play(board)
-puts "Please Enter a move (1-9):"
+turn_count = 0
+while turn_count < 9
+  turn(board)
+  turn_count += 1
 end
